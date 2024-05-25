@@ -17,3 +17,5 @@ Route::get('/students/{id}', [StudentController::class, 'select']);
 Route::post('/students', [StudentController::class, 'create']);
 Route::patch('/students/{id}', [StudentController::class, 'update']);
 Route::delete('/students/{id}', [StudentController::class, 'delete']);
+
+Route::get('/students/{id}/subjects', [StudentController::class, 'subjects']);
