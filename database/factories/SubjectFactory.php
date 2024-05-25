@@ -17,7 +17,7 @@ class SubjectFactory extends Factory
     public function definition(): array
     {
         return [
-            'subject_code'  => Str::random(6),
+            'subject_code'  => $this->faker->randomKey(['abs', 'vsd']),
             'name'          => $this->faker->name(),
             'description'   => $this->faker->paragraph(2),
             'instructor'    => $this->faker->name(),
